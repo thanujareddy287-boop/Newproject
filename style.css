@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f4f6;
+    color: #111827;
+}
+.card {
+    max-width: 420px;
+    margin: 70px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+}
+input, button {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin: 10px 0;
+}
+button { cursor: pointer; }
+a { display: inline-block; margin: 8px 0; }
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar button { width: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 9px;
+    text-align: left;
+}
+#message { min-height: 20px; }

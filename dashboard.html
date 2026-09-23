@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="topbar">
+        <h1>Student Dashboard</h1>
+        <button id="logout">Logout</button>
+    </div>
+
+    <p id="userInfo"></p>
+
+    <section id="adminPanel" hidden>
+        <h2>Admin: Add Student</h2>
+        <form id="studentForm">
+            <input id="studentName" placeholder="Student name" required maxlength="80">
+            <input id="studentEmail" type="email" placeholder="Student email" required maxlength="120">
+            <input id="studentCourse" placeholder="Course" required maxlength="80">
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <h2>Students</h2>
+    <table>
+        <thead>
+        <tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Action</th></tr>
+        </thead>
+        <tbody id="students"></tbody>
+    </table>
+
+    <p id="message"></p>
+</div>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
